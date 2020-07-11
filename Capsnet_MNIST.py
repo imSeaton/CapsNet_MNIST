@@ -18,6 +18,8 @@ from itertools import product
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print(f'{torch.__version__}')
+print(f'{torchvision.__version__}')
 
 
 # squash the vector to (0, 1) and keep the direction
